@@ -4,7 +4,7 @@
 --clr-primary: hsl(333 80% 67%);
 --clr-primary-dark: hsl(300 43% 22%);
 --clr-neutral-100: hsl(0 0% 100%);
---clr-neutral-200: hsl(300 24% 90%);
+--clr-neutral-200: hsl(300 24% 95%);
 --clr-neutral-300: hsl(303 10% 43%);
 }
 
@@ -80,7 +80,7 @@ h1 {
     width: min(100% - 2.5rem, 1100px);
     gap: 2.75rem;
     margin-inline: auto;
-    margin-block: 5rem;
+    padding-block: 5rem;
   }
 
   /* #5 | #PAGE SECTION | */
@@ -118,7 +118,7 @@ h1 {
   height: 45px;
 }
 
-.headline__content { max-width: 20rem; }
+.headline__content { max-width: 22rem; }
 
 /* #7 | #MAGIC | */
 
@@ -127,6 +127,7 @@ h1 {
   body { 
     background: url(images/bg-pattern-top-desktop.svg) no-repeat top, url(images/bg-pattern-bottom-desktop.svg) no-repeat bottom;
     text-align: left;
+    --fs-900: 5rem;
   }
  
   .main {
@@ -135,8 +136,12 @@ h1 {
 
   .headline { justify-content: start; }
 
+  .headline__content { 
+    transform: translateX(15px);
+  }
+
   .ratings {
-    width: calc(450px + 2rem);
+    width: calc(450px + 6rem);
     justify-self: end;
   }
 
@@ -158,6 +163,7 @@ h1 {
   }
 
   .testimonial {
+    gap: 1.5rem;
     height: calc(100% + 2rem);
     flex-direction: row;
     grid-column: span 2;
